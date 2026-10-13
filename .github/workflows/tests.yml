@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checker:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Built in self tests
+        run: python scripts/check_handoff.py --self-test
+      - name: Automatic tests (including every example)
+        run: python -m unittest discover -s tests -v
+      - name: No long dashes in the docs
+        run: |
+          if grep -rnP "[\x{2012}-\x{2015}]" --include='*.md' .; then
+            echo "Long dashes found"; exit 1
+          fi
