@@ -2,6 +2,10 @@
 
 All notable changes to Plain Handoff are listed here. Versions follow semantic versioning (major.minor.patch).
 
+## 1.0.1 (2026-10-15)
+
+- README: download, install, clone and issue links now point to the new account name, github.com/onittindwani-ai. Old links still redirect. No change to the skill itself.
+
 ## 1.0.0 (2026-10-13)
 
 First release.

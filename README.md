@@ -2,7 +2,7 @@
 
 A skill for Claude Code and Codex that ends every task with a short, plain English summary you will actually read.
 
-**Download:** [latest release (zip)](https://github.com/onittindwani1/claude-codex-plain-handoff-skill/releases/latest) · **Source:** [github.com/onittindwani1/claude-codex-plain-handoff-skill](https://github.com/onittindwani1/claude-codex-plain-handoff-skill)
+**Download:** [latest release (zip)](https://github.com/onittindwani-ai/claude-codex-plain-handoff-skill/releases/latest) · **Source:** [github.com/onittindwani-ai/claude-codex-plain-handoff-skill](https://github.com/onittindwani-ai/claude-codex-plain-handoff-skill)
 
 ## The problem it solves
 
@@ -58,7 +58,7 @@ You need 2 things for the best result: the skill folder, and a short always on n
 
 ### Claude Code
 
-**Step 1. Put the folder in place.** Either download the zip from the [latest release](https://github.com/onittindwani1/claude-codex-plain-handoff-skill/releases/latest), or clone it with git (see "Install with git" below). Unzip the download, so you have a folder called `plain-handoff` with `SKILL.md` directly inside it. (Some unzip tools create `plain-handoff/plain-handoff/`. If yours did, use the inner folder.)
+**Step 1. Put the folder in place.** Either download the zip from the [latest release](https://github.com/onittindwani-ai/claude-codex-plain-handoff-skill/releases/latest), or clone it with git (see "Install with git" below). Unzip the download, so you have a folder called `plain-handoff` with `SKILL.md` directly inside it. (Some unzip tools create `plain-handoff/plain-handoff/`. If yours did, use the inner folder.)
 
 For every project on your computer (recommended), move it to your personal skills folder:
 
@@ -117,12 +117,12 @@ ln -s ~/.claude/skills/plain-handoff ~/.agents/skills/plain-handoff
 
 Claude Code, for every project:
 ```bash
-git clone https://github.com/onittindwani1/claude-codex-plain-handoff-skill.git ~/.claude/skills/plain-handoff
+git clone https://github.com/onittindwani-ai/claude-codex-plain-handoff-skill.git ~/.claude/skills/plain-handoff
 ```
 
 Codex, for every project:
 ```bash
-git clone https://github.com/onittindwani1/claude-codex-plain-handoff-skill.git ~/.agents/skills/plain-handoff
+git clone https://github.com/onittindwani-ai/claude-codex-plain-handoff-skill.git ~/.agents/skills/plain-handoff
 ```
 
 To update later, run `git pull` inside that folder. Then do Step 2 (the always on note) if you haven't yet.
@@ -187,7 +187,7 @@ You don't need to do anything. The skill runs at the end of every task. A few us
 
 ## Found a problem or have an idea?
 
-Open an issue on [GitHub](https://github.com/onittindwani1/claude-codex-plain-handoff-skill/issues). Please don't paste private code, passwords or customer details into an issue.
+Open an issue on [GitHub](https://github.com/onittindwani-ai/claude-codex-plain-handoff-skill/issues). Please don't paste private code, passwords or customer details into an issue.
 
 ## Licence
 
